@@ -1,9 +1,10 @@
 :root {
-  --mainBrown: #2d1ef1;
-  --mainYellow: #ff9e09;
+  --mainYellow: #fffd00;
   --mainGrey: #ece8dc;
   --mainWhite: #fff;
   --mainDark: #222;
+  --mainBlue: #00a1ff;
+  --mainRed: #ff2b00;
 }
 
 body {
@@ -17,7 +18,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Courier New", Courier, monospace !important;
+  font-family: "Open Sans Semibold" !important;
   letter-spacing: 0.25rem!;
 }
 .text-yellow {
@@ -26,4 +27,28 @@ h6 {
 .cart-icon {
   cursor: pointer;
   font-size: 2rem;
+}
+.background,
+.about-background {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  color: var(--mainYellow);
+}
+.about-background {
+  min-height: 60vh;
+}
+.btn-blue {
+  color: var(--mainBlue);
+  border-color: var(--mainBlue);
+}
+.btn-blue:hover {
+  background: var(--mainBlue);
+  color: var(--mainWhite) !important;
+}
+.footer {
+  background: var(--mainDark);
 }
