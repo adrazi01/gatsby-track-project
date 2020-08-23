@@ -1,6 +1,6 @@
 :root {
   --mainYellow: #fffd00;
-  --mainGrey: #ece8dc;
+  --mainGrey: #f5f5f5;
   --mainWhite: #fff;
   --mainDark: #222;
   --mainBlue: #00a1ff;
@@ -18,8 +18,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Open Sans Semibold" !important;
-  letter-spacing: 0.25rem!;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif !important;
+  letter-spacing: 0.025rem!;
+  font-weight: 600;
 }
 .text-yellow {
   color: var(--mainYellow);
@@ -29,16 +30,18 @@ h6 {
   font-size: 2rem;
 }
 .background,
-.about-background {
+.about-background,
+.shop-background {
   min-height: 80vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   background-position: center;
   background-size: cover;
-  color: var(--mainYellow);
+  color: var(--mainDark);
 }
-.about-background {
+.about-background,
+.shop-background {
   min-height: 60vh;
 }
 .btn-blue {

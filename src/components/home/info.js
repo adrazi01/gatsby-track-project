@@ -4,7 +4,7 @@ import Title from "../globals/title"
 
 export default function info() {
   return (
-    <section className="py-5">
+    <section className="py-4">
       <div className="container">
         <Title title="our story"></Title>
         <div className="row">
