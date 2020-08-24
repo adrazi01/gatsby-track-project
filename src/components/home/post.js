@@ -4,7 +4,7 @@ import { Card, CardTitle, CardText, CardSubtitle, CardBody } from "reactstrap"
 
 const Post = ({ title, author, path, date, body }) => {
   return (
-    <Card className="my-3">
+    <Card className="post-card my-3">
       <CardBody>
         <CardTitle>
           <Link to={path}>
@@ -13,8 +13,8 @@ const Post = ({ title, author, path, date, body }) => {
           </Link>
         </CardTitle>
         <CardSubtitle>
-          <h6 className="text-info">{date}</h6>{" "}
-          <h6 className="text-info">{author}</h6>
+          <h6 className="text-danger">{date}</h6>{" "}
+          <h6 className="text-danger">{author}</h6>
         </CardSubtitle>
         <CardText>{body}</CardText>
         <Link to={path} className="btn btn-blue float-right">

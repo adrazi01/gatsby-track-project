@@ -28,6 +28,11 @@ export default class navbar extends Component {
         path: "/blog",
         text: "blog",
       },
+      {
+        id: 5,
+        path: "/login",
+        text: "login",
+      },
     ],
   }
   navbarHandler = () => {

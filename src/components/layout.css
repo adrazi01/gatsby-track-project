@@ -34,7 +34,8 @@ h6 {
 .background,
 .about-background,
 .shop-background,
-.blog-background {
+.blog-background,
+.login-background {
   min-height: 80vh;
   display: flex;
   align-items: center;
@@ -45,7 +46,8 @@ h6 {
 }
 .about-background,
 .shop-background,
-.blog-background {
+.blog-background,
+.login-background {
   min-height: 60vh;
 }
 .btn-blue {
@@ -58,20 +60,22 @@ h6 {
   background: var(--mainDark);
   color: var(--mainWhite) !important;
 }
-
+.btn-login {
+  background: var(--mainDark);
+  border-color: var(--mainDark);
+  border-radius: 0;
+  color: var(--mainWhite);
+  font-family: "Montserrat", Helvetica, Arial, sans-serif !important;
+}
+.btn-login:hover {
+  color: var(--mainWhite) !important;
+}
 .footer {
   background: var(--mainDark);
 }
 .card {
   border-radius: 0;
 }
-.btn-browse {
-  color: var(--mainWhite);
-  font-family: "Montserrat", Helvetica, Arial, sans-serif !important;
-  display: flex;
-  align-items: left;
-  justify-content: left;
-  background: var(--mainDark);
-  border-color: var(--mainDark);
-  border-radius: 0;
+.post-card {
+  background: var(--mainGrey);
 }
