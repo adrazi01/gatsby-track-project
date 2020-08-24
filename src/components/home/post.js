@@ -7,14 +7,17 @@ const Post = ({ title, author, path, date, body }) => {
     <Card className="my-3">
       <CardBody>
         <CardTitle>
-          <Link to={path}> {title}</Link>
+          <Link to={path}>
+            {" "}
+            <h4 className="text-black">{title}</h4>
+          </Link>
         </CardTitle>
         <CardSubtitle>
-          <span className="text-info">{date}</span> by{" "}
-          <span className="text-info">{author}</span>
+          <h6 className="text-info">{date}</h6>{" "}
+          <h6 className="text-info">{author}</h6>
         </CardSubtitle>
         <CardText>{body}</CardText>
-        <Link to={path} className="btn btn-outline-primary float-right">
+        <Link to={path} className="btn btn-blue float-right">
           Read more
         </Link>
       </CardBody>

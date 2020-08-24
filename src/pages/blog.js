@@ -19,7 +19,7 @@ const BlogPage = ({ data }) => (
 
 export const blogQuery = graphql`
   {
-    backgroundone: file(relativePath: { eq: "second_background.jpg" }) {
+    backgroundone: file(relativePath: { eq: "background3.jpg" }) {
       childImageSharp {
         fluid(quality: 100) {
           ...GatsbyImageSharpFluid_tracedSVG

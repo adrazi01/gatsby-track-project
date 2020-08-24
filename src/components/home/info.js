@@ -19,9 +19,7 @@ export default function info() {
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
             <Link to="/about/">
-              <button className="btn text-uppercase btn-blue">
-                About page
-              </button>
+              <button className="btn text-uppercase btn-blue">About</button>
             </Link>
           </div>
         </div>

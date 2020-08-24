@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Background from "../components/globals/background"
@@ -12,16 +12,15 @@ const IndexPage = ({ data }) => (
     <Background
       img={data.backgroundone.childImageSharp.fluid}
       title="Built for running"
+      subheading="Best choice for athletes"
+      styleClass="background"
     />
     <Products />
     <Background
       img={data.backgroundtwo.childImageSharp.fluid}
       title="Check our selection"
-    >
-      <Link to="/shop/">
-        <button className="btn text-uppercase btn-blue">Browse</button>
-      </Link>
-    </Background>
+      styleClass="background"
+    ></Background>
     <Info />
   </Layout>
 )
@@ -35,7 +34,7 @@ export const query = graphql`
         }
       }
     }
-    backgroundtwo: file(relativePath: { eq: "background2.jpg" }) {
+    backgroundtwo: file(relativePath: { eq: "background.jpg" }) {
       childImageSharp {
         fluid(quality: 100) {
           ...GatsbyImageSharpFluid_tracedSVG

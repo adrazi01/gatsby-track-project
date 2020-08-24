@@ -4,7 +4,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Background from "../components/globals/background"
-import Info from "../components/home/info"
+import AboutInfo from "../components/home/aboutinfo"
 
 const AboutPage = ({ data }) => (
   <Layout>
@@ -14,13 +14,13 @@ const AboutPage = ({ data }) => (
       title="About us"
       styleClass="about-background"
     />
-    <Info />
+    <AboutInfo />
   </Layout>
 )
 
 export const query = graphql`
   {
-    img: file(relativePath: { eq: "concrete_background.png" }) {
+    img: file(relativePath: { eq: "background4.jpg" }) {
       childImageSharp {
         fluid(quality: 100) {
           ...GatsbyImageSharpFluid_tracedSVG
