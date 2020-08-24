@@ -41,7 +41,8 @@ h6 {
   color: var(--mainDark);
 }
 .about-background,
-.shop-background {
+.shop-background,
+.blog-background {
   min-height: 60vh;
 }
 .btn-blue {

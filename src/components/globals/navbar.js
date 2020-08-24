@@ -23,6 +23,11 @@ export default class navbar extends Component {
         path: "/shop",
         text: "shop",
       },
+      {
+        id: 4,
+        path: "/blog",
+        text: "blog",
+      },
     ],
   }
   navbarHandler = () => {
